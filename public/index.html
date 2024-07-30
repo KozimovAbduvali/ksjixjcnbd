@@ -17,9 +17,9 @@
 <body>
   <!-- header -->
   <header class="w-full bg-white sticky lg:relative top-0 z-40">
-    <div class="max-w-base mx-auto px-4 md:px-6 py-3 md:py-5 text-sm">
+    <div class="max-w-base mx-auto px-4 md:px-6 py-3 lg:py-5">
       <div class="hidden lg:flex items-center justify-between gap-x-8">
-        <div class="col-span-1">
+        <div class="">
           <a class="w-max relative flex items-center gap-x-2 text-black transition duration-300 hover:text-brand-brown-400 underline-animation py-2"
             href="#">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,7 @@
             <span class="font-medium">Екатеринбург</span>
           </a>
         </div>
-        <div class="col-span-2 flex items-center gap-x-10 lg:-ml-10">
+        <div class="flex items-center gap-x-10 lg:-ml-10">
           <div class="">
             <button class="group flex items-center gap-x-2">
               <p class="">
@@ -56,7 +56,7 @@
           </a>
         </div>
         <div class="flex items-center gap-x-8">
-          <p class="text-sm  whitespace-nowrap">zakaz@politaks.ru</p>
+          <p class="whitespace-nowrap">zakaz@politaks.ru</p>
           <p class="font-semibold whitespace-nowrap">8 800 505-69-03</p>
         </div>
       </div>
@@ -90,9 +90,9 @@
         <!-- 2 -->
         <form class="flex-1 hidden lg:block h-full">
           <label for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            class="mb-2 font-medium text-gray-900 sr-only dark:text-white">Search</label>
           <div class="relative">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
               <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -100,7 +100,7 @@
               </svg>
             </div>
             <input type="search" id="default-search"
-              class="block w-full p-4 py-5 ps-10 text-sm  rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-brand-pink-300 outline-brand-brown-400"
+              class="block w-full px-6 py-5 ps-12 rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-brand-pink-300 outline-brand-brown-400"
               placeholder="Поиск" required />
           </div>
         </form>
@@ -174,7 +174,7 @@
   <main>
     <!-- hero -->
     <section
-      class="max-w-base grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7 mx-auto px-4 md:px-6 py-12 pt-6 md:pt-12">
+      class="max-w-base grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7 mx-auto px-4 md:px-6 pt-6 mb-24">
       <!-- 1 -->
       <div class="lg:col-span-2 aspect-video lg:aspect-[850/320] relative rounded-lg overflow-hidden group">
         <div class="relative z-10 w-full h-full flex items-end bg-gradient-to-t to-black/0 from-black/15 p-5">
@@ -229,7 +229,7 @@
     </section>
 
     <!-- About company -->
-    <section class="max-w-base mx-auto px-4 md:px-6 py-12">
+    <section class="max-w-base mx-auto px-4 md:px-6 mb-24">
       <div class="w-full bg-brand-pink-300 rounded-lg px-4 md:px-8 py-10">
         <!-- 1 -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 items-start gap-4 lg:gap-7">
@@ -257,14 +257,14 @@
           </p>
         </div>
         <!-- 2 -->
-        <div class="grid lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7 mt-10 md:pt-5">
+        <div class="grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7 mt-10 md:pt-5">
           <!-- 1 -->
-          <div class="aspect-video lg:aspect-[410/215] rounded-lg overflow-hidden group">
+          <div class="aspect-video md:aspect-[410/215] rounded-lg overflow-hidden group">
             <img class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
               src="./img/worker-applies-1.jpg" alt="">
           </div>
           <!-- 2 -->
-          <div class="aspect-video lg:aspect-auto lg:col-span-2 lg:row-span-2 rounded-lg overflow-hidden">
+          <div class="aspect-video md:aspect-auto lg:col-span-2 md:row-span-2 rounded-lg overflow-hidden">
             <iframe class="w-full h-full object-cover"
               src="https://www.youtube.com/embed/6ziLM4CfmSA?si=SWdtOfrGRB4VVHVX" title="YouTube video player"
               frameborder="0"
@@ -272,7 +272,7 @@
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
           <!-- 3 -->
-          <div class="aspect-video lg:aspect-[410/215] rounded-lg overflow-hidden group">
+          <div class="aspect-video md:aspect-[410/215] rounded-lg overflow-hidden group">
             <img class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
               src="./img/worker-applies-1.jpg" alt="">
           </div>
@@ -282,7 +282,7 @@
     </section>
 
     <!-- Production -->
-    <section class="max-w-base mx-auto px-4 md:px-6 py-12">
+    <section class="max-w-base mx-auto px-4 md:px-6 mb-24">
       <!-- 1 -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 items-start gap-4 lg:gap-7">
         <div class="flex items-center gap-x-6">
@@ -361,7 +361,7 @@
 
     <!-- Politax on card -->
     <section
-      class="w-full relative overflow-x-hidden bg-brand-pink-300 overflow-hidden py-12 md:py-20 lg:py-24 mt-4 md:mt-8 lg:mt-12">
+      class="w-full relative overflow-x-hidden bg-brand-pink-300 overflow-hidden py-12 md:py-20 lg:py-24 mb-24">
       <div class="max-w-base mx-auto grid md:grid-cols-2 gap-10 gap-y-48 md:gap-y-0 relative z-10 px-4 md:px-6">
         <div class="">
           <div>
@@ -409,7 +409,7 @@
     </section>
 
     <!-- our clients -->
-    <section class="max-w-base mx-auto px-4 md:px-6 py-12">
+    <section class="max-w-base mx-auto px-4 md:px-6 mb-24">
       <div class="grid md:grid-cols-2 lg:grid-cols-3 items-start gap-6 lg:gap-7">
         <div class="flex items-center gap-x-6">
           <svg width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -490,7 +490,7 @@
     </section>
 
     <!--  -->
-    <section class="max-w-base mx-auto px-4 md:px-6 py-12">
+    <section class="max-w-base mx-auto px-4 md:px-6 mb-24">
       <div class="bg-cover bg-no-repeat bg-bottom text-white rounded-lg px-4 md:px-8 py-8 md:py-14"
         style="background-image: url(./img/project.jpg);">
         <h3 class="max-w-3xl font-semibold md:text-lg lg:text-2xl">
@@ -507,7 +507,7 @@
     </section>
   </main>
 
-  <footer class="bg-brand-pink-300 overflow-x-hidden py-12 mt-14">
+  <footer class="bg-brand-pink-300 overflow-x-hidden py-12">
     <div class="max-w-base mx-auto px-4 md:px-6">
       <div class="xl:flex gap-10 space-y-8 xl:space-y-0">
         <div class="xl:w-4/5 md:grid grid-cols-2 lg:grid-cols-4 gap-8">
