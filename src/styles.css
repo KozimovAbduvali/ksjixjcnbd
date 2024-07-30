@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-montserrat overflow-x-hidden text-sm
+  }
+}
+
+.underline-animation::after {
+  content: '';
+  transform: scaleX(0);
+  transition: transform ease-out;
+  @apply absolute w-full h-0.5 bottom-0 left-0 rounded-full bg-brand-brown-400 duration-300
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  /* transform-origin: bottom left; */
+}
+
+
+.button-animation::before {
+  content: '';
+  transition: width 0.3s ease-out;
+  @apply bg-brand-brown-600 absolute w-0 h-full z-0 -translate-x-1/2 left-1/2 top-0
+}
+
+.button-animation:hover::before {
+  width: 100%;
+}
+
+.button-animation:hover {
+  color: white;
+}
