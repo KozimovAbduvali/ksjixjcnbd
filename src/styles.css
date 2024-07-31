@@ -39,3 +39,7 @@
 .button-animation:hover {
   color: white;
 }
+
+.swiper-pagination-bullet-active {
+  @apply !bg-brand-brown-400
+}
